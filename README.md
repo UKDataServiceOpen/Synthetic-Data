@@ -26,7 +26,7 @@ The training materials - including webinar recordings, slides, and sample Python
 
 Thank you and good luck on your journey exploring new forms of data! <br>
 
-<a href="https://twitter.com/JosephAllen1234" target=_blank>Joseph Allen</a> and <a href="https://www.research.manchester.ac.uk/portal/diarmuid.mcdonnell.html" target=_blank>Dr Diarmuid McDonnell</a> 
+<a href="https://twitter.com/JosephAllen1234" target=_blank>Joseph Allen</a>
 <br />
 UK Data Service  <br />
 University of Manchester <br />
