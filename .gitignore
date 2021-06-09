@@ -1,0 +1,8 @@
+*.RData
+*.Rhistory
+
+code-demo/figure*
+code-demo/rsconnect*
+
+*checkpoint.ipynb
+*.ipynb_checkpoints*
