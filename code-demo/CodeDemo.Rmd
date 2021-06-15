@@ -22,23 +22,63 @@ library(synthpop)
 
 ## Load dataset
 ```{r load temp.csv, warning=FALSE}
-df <- read_csv("temp.csv")
+df <- read_csv("NATSAL/natsal_3_teaching_open_with_personal.csv")
 
-# Show first 5 rows
-kable(head(df))
-```
-
-## Head of dataset
-
-```{r head dataset, layout="l-body-outset",  warning=FALSE}
+# print table
+# kable(head(df))
 paged_table(df)
 ```
 
-## Snynthpop
 
-``` {r synthpop, layout="l-body-outset",  warning=FALSE}
-mysyn <- syn(df)
-summary(mysyn)
-compare(mysyn, df)
+## Snynthpop
+Synthpop has a codebook function which will assess your data, this runs before synthesis anyway but it can be useful to pre-process the data before synthesis.
+
+
+``` {r synthpop-codebook, layout="l-body-outset",  warning=FALSE}
+codebook.syn(df)
+```
+
+
+It's suggested that no column has more than 60 unique factors, for this reason we will drop our personal data, and reduce scope.
+``` {r drop-cols, layout="l-body-outset",  warning=TRUE}
+# Synthesis will fail due to more than 60 levels of data in our factors
+# Drop columns with too many factors, and reduce
+drops <- c("first_name","last_name","email", 'importance_religion', 'age_at_first_child')
+df <- df[ , !(names(df) %in% drops)]
+
+# print table
+paged_table(df)
+```
+
+All strings need to be converted into factors
+``` {r convert-strings, layout="l-body-outset",  warning=TRUE}
+# convert strings to factors
+df <- as.data.frame(unclass(df), stringsAsFactors = TRUE)
+
+codebook.syn(df)
+```
+
+Finally we can synthesize a dataset
+``` {r synthesis-time, layout="l-screen",  warning=FALSE}
+# R Synthesis, synthesize 5 datasets
+syn_df <- syn(df, m = 5)
+
+# summarise
+summary(syn_df)
+```
+
+We can compare our dataset with our new synthetic dataset, we can also compare with multiple synthetic datasets
+``` {r compare, layout="l-body-outset",  warning=FALSE}
+# We can then compare these, with multiple datasets
+# compare(syn_df, df, msel = 1:5)
+compare(syn_df, df, vars = "age_group", msel = 1:5)
+```
+
+
+Finally we can output our dataset to a CSV for our Jupyter analysis.
+``` {r write-data, layout="l-body-outset",  warning=FALSE}
+# synthpop has it's own write function that supports SPSS, CSV and much more
+
+write.syn(syn_df,"syn_NATSAL", filetype = "csv", convert.factors = "numeric")
 ```
 
