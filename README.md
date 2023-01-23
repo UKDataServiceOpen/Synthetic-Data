@@ -5,10 +5,7 @@
 In this free webinar series, we cover the advantages and disadvantages of synthetic data. We explore the variety of methods available to generate synthetic data. Finally, we discuss the nuanced definitions comprising synthetic data itself. 
 
 ## Code Demo
-.. image:: https://mybinder.org/badge_logo.svg
- :target: https://mybinder.org/v2/gh/UKDataServiceOpen/Synthetic-Data/HEAD?labpath=https%3A%2F%2Fgithub.com%2FUKDataServiceOpen%2FSynthetic-Data%2Ftree%2Fmain%2F2022%2Fcode-demo
- 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UKDataServiceOpen/Synthetic-Data/HEAD?labpath=https%3A%2F%2Fgithub.com%2FUKDataServiceOpen%2FSynthetic-Data%2Ftree%2Fmain%2F2022%2Fcode-demo)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UKDataServiceOpen/Synthetic-Data/HEAD)
 
 ## Topics
 The following topics are covered under this training series:
