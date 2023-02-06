@@ -1,0 +1,6 @@
+fitter==1.5.2
+matplotlib==3.6.3
+numpy==1.24.2
+pandas==1.5.3
+scikit_learn==1.2.1
+seaborn==0.12.2
