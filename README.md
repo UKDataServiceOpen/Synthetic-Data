@@ -4,22 +4,23 @@
 
 In this free webinar series, we cover the advantages and disadvantages of synthetic data. We explore the variety of methods available to generate synthetic data. Finally, we discuss the nuanced definitions comprising synthetic data itself. 
 
-## Code Demo
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UKDataServiceOpen/Synthetic-Data/HEAD)
+## Topics 
+Synthetic data – what it is and is not
+Fidelity – an important concept for synthetic data
+Uses of synthetic data
+Generating synthetic data
 
-## Topics
-The following topics are covered under this training series:
-1. **What is Synthetic Data?** - The basic uses and features of Synthetic Data.
-2. **Masking & Redaction** - We cover some basic techniques for synthesizing data, masking and redaction. 
-3. **Coarsening, Mimicking & Simulation** - We cover the more advacned aspects of data synthesis.
-4. **Code Demo**
+<img width="1325" height="473" alt="image" src="https://github.com/user-attachments/assets/4894246d-e932-4bd7-adcb-77b0b2db4bf9" />
+
+## Code Demo
+Importing and checking data
+Exploring data - data descriptives, visualising data, distributions
+Creating synthetic data - low fidelity options 1, 2, 3 and medium fidelity options 1, 2, and 3
+Documentaiton
 
 ## Materials
+This workshop has been run multiple times over several years. The materials for each, including slide decks and Jupyter notebook files are available for each edition in a folder with the respective year. 
 
-The training materials - including webinar recordings, slides, and sample Python code - can be found in the following folders:
-* [reading-list](./reading-list) - explore further resources including articles, books, online resources and more.
-* [webinars](./webinars) - watch recordings of our webinars and download the underpinning slides.
-* [code-demo)(./code-demo) - follow along with a synthesis demo.
 
 ## Further Information
 
