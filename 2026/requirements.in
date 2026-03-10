@@ -1,5 +1,8 @@
+warnings
+os
 numpy
-matplotlib==3.*
-seaborn==0.13.*
 pandas
-scipy
+matplotlib
+seaborn
+fitter
+scikit-learn
