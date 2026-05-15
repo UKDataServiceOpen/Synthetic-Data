@@ -21,6 +21,10 @@ Documentaiton
 ## Materials
 This workshop has been run multiple times over several years. The materials for each, including slide decks and Jupyter notebook files are available for each edition in a folder with the respective year. 
 
+## Data sources and licenses
+
+The 2021 edition uses NATSAL open teaching data as well as synthetic versions of this. 
+The 2023, 2024, and 2026 editions use simple height and weight data downloaded from https://www.kaggle.com/datasets/burnoutminer/heights-and-weights-dataset, which was scraped and compiled from Statistics Online Computational Resources. The goals of the Statistics Online Computational Resource (SOCR) are to design, validate and freely disseminate knowledge. http://www.socr.ucla.edu/  
 
 ## Further Information
 
